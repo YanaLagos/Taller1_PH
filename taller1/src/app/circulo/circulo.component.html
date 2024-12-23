@@ -1,0 +1,22 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Círculo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Perímetro<br><br>
+      El perímetro de un círculo es la longitud de la línea que forma su borde.
+      <!-- URL externa de la imagen -->
+      <img src="https://aprendeencasa.sep.gob.mx/multimedia/B64images/202112/B64-IMG-moy7U2tLQV-ArNldZ7NKR.png" alt="Imagen del círculo" class="imagen-circulo">
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-input [(ngModel)]="txtRadio" type= number label="Radio (cm)" label-placement="floating" fill="solid" placeholder="Ingrese número de radio"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="calcularPerimetro()">CALCULAR EL PERÍMETRO</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-text *ngIf="perimetroValido()">El radio del círculo es: {{perimetro.toFixed(2)}}</ion-text>
+  </ion-item>
+</ion-content>

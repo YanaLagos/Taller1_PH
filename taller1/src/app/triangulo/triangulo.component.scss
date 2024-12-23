@@ -1,0 +1,32 @@
+ion-content {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+  
+ion-card {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}  
+
+.imagen-triangulo {
+    width: 100%;
+    max-width: 400px; 
+    object-fit: cover; 
+    height: auto;
+  }
+
+.input-lados {
+    margin-top: 30px;
+    width: 70%;
+    max-width: 300px;
+}
+
+ion-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
